@@ -44,7 +44,7 @@ def summary(m):
 
 # fonction tirée de : https://www.kaggle.com/code/mohitchaitanya/simple-iris-dataset-classification-using-pytorch
 # calcule l'accuracy en comparant le vecteur one-hot de la vérité au vecteur de prédiction
-def get_accuracy_multiclass(pred_arr, original_arr, num_classes=3):
+def get_accuracy_multiclass(pred_arr, original_arr, num_classes):
     if len(pred_arr)!=len(original_arr):
         return False
     pred_arr = pred_arr.detach().numpy()
