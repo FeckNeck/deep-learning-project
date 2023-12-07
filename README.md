@@ -3,8 +3,17 @@ This project was realized in collaboration with @inesf3 during our second year o
 
 # Installation
 
+Install virtualenv
+```
+pip install virtualenv
+```
+Create a virtual environnement 
+```
+virtualenv venv
+```
 Download external python libraries from requirement.txt file with command :
 ```
-pip install -r requirements.txt
+source venv/bin/activate
+pip install -r requirement.txt
 ```
 Run the index.ipynb
